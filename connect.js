@@ -1,10 +1,4 @@
-/* 
- * Current Issues
- * -> How to best write HTML code in JS -> Template object with all HTML templates
- * 
- */
-
- // At every turn, we recreate playerOdd and playerEven with the correct attributes
+// At every turn, we recreate playerOdd and playerEven with the correct attributes
  function Player (agent, icon) {
     this.agent = agent;
     this.icon = icon;
