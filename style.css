@@ -1,0 +1,119 @@
+* {
+	margin: 0;
+}
+
+html, body {
+  background: #A1FFCE; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #A1FFCE , #FAFFD1); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #A1FFCE , #FAFFD1); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  height: 100%;       
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+}
+
+/* Gameboard */
+#tictactoe {
+  background: white;
+  border: 1px solid black;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+  margin: 10px auto;
+  width: 350px;
+}
+
+table {
+  margin: 5% auto;
+}
+
+table, 
+td, 
+tr {
+  border: 1px solid black;
+  border-collapse: collapse;
+  font-size: 100px;
+}
+
+td:hover {
+  background: azure;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.tile {
+  font-size: 50px;
+  height: 80px;
+  width: 80px;
+}
+
+/* Message Box */
+.message-box {
+  margin: 10px auto;
+}
+
+/* Game state classes */
+.inactive {
+  pointer-events: none;
+}
+
+.hide-element {
+  display: none;
+  opacity: 0;
+  height: 0;
+  transition: visibility 5s, opacity 0.5s linear;
+}
+
+/* Buttons */
+.player-select,
+.opponent-select {
+  margin: 10px;
+}
+
+.player-select:focus {
+  color: red;
+  transition: 0.3s ease;
+}
+
+button {
+  background: none;
+  border-left: 0;
+  border-top: 0;
+  border-right: 0;
+  cursor: pointer;
+  font-size: 20px;
+  margin: 10px auto;
+}
+
+button:hover {
+  border-bottom: 1px solid red;
+  color: red;
+  transition: .3s ease;
+}
+
+button:active,
+button:focus {
+  outline: none;
+}
+
+/* Sticky Footer */
+footer {
+  margin-top: 5%;
+  padding: 10px;
+}
+
+/* Media Queries */
+@media screen and (max-width: 450px) {
+  .tile {
+    font-size: 20px;
+    height: 80px;
+    width: 80px;
+  }
+  
+  #tictactoe {
+    font-size: 20px;
+    margin: 0 auto;
+    width: 90%;
+  }
+  
+  .message-box {
+    padding: 2px;
+  }
+}
